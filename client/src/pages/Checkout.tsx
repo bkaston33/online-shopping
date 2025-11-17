@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { useCart } from "@/contexts/CartContext";
 import { useToast } from "@/hooks/use-toast";
-import { CheckoutFormData, checkoutFormSchema } from "@shared/schema";
+import { CheckoutFormData, checkoutFormSchema, Order } from "@shared/schema";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -36,14 +36,15 @@ export default function Checkout() {
   });
 
   const placeOrderMutation = useMutation({
-    mutationFn: async (data: CheckoutFormData) => {
-      return await apiRequest("POST", "/api/orders", {
+    mutationFn: async (data: CheckoutFormData): Promise<Order> => {
+      const response = await apiRequest("POST", "/api/orders", {
         ...data,
         subtotal: subtotal.toFixed(2),
         tax: tax.toFixed(2),
         total: total.toFixed(2),
         items: JSON.stringify(cart),
       });
+      return await response.json();
     },
     onSuccess: (response) => {
       clearCart();
