@@ -45,7 +45,7 @@ export class MemStorage implements IStorage {
         name: "Create Everyday",
         description: "Daily inspiration printed bold. This motivational typography design reminds you to bring creativity into every moment. Make your mark, every single day.",
         price: "26.99",
-        imageUrl: createTee,
+        imageUrl: "https://images.unsplash.com/photo-1738486260587-6203379c46fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBsYWluJTIwaG9vZGllfGVufDB8fDB8fHww",
         sizes: ["S", "M", "L", "XL", "XXL"],
         colors: ["Black", "Charcoal", "Navy"],
       },
