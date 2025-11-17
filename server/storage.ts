@@ -34,12 +34,12 @@ export class MemStorage implements IStorage {
   private seedProducts() {
     const productsData: InsertProduct[] = [
       {
-        name: "Geometric Dreams",
-        description: "A bold artistic statement featuring vibrant geometric abstract patterns in blue and orange. Perfect for creative souls who love modern design and want to stand out.",
-        price: "28.99",
-        imageUrl: geometricTee,
+        name: "Classic White Tee",
+        description: "A timeless essential for any wardrobe. This premium white t-shirt features a clean, minimalist design with superior comfort and quality. Perfect for everyday wear or layering.",
+        price: "24.99",
+        imageUrl: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhaW4lMjB0c2hpcnR8ZW58MHx8MHx8fDA%3D",
         sizes: ["S", "M", "L", "XL", "XXL"],
-        colors: ["White", "Black", "Navy"],
+        colors: ["White", "Black", "Gray"],
       },
       {
         name: "Create Everyday",
@@ -80,14 +80,6 @@ export class MemStorage implements IStorage {
         imageUrl: sunsetTee,
         sizes: ["S", "M", "L", "XL", "XXL"],
         colors: ["White", "Cream", "Light Blue"],
-      },
-      {
-        name: "Capture The Moment",
-        description: "For the photographers and memory makers. A vintage camera graphic paired with inspiring typography. Every moment is worth capturing—wear it as a reminder.",
-        price: "28.99",
-        imageUrl: cameraTee,
-        sizes: ["S", "M", "L", "XL", "XXL"],
-        colors: ["Charcoal", "Black", "Navy"],
       },
     ];
 
