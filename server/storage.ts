@@ -74,12 +74,12 @@ export class MemStorage implements IStorage {
         colors: ["Blue", "Black", "Gray"],
       },
       {
-        name: "Sunset Vibes",
-        description: "Retro nostalgia meets tropical paradise. Featuring colorful gradient stripes and palm tree silhouettes that transport you to endless summer evenings and good vibes only.",
-        price: "27.99",
-        imageUrl: sunsetTee,
-        sizes: ["S", "M", "L", "XL", "XXL"],
-        colors: ["White", "Cream", "Light Blue"],
+        name: "Socks",
+        description: "Add a pop of color to your everyday look with these comfortable socks. Soft, breathable fabric keeps your feet cozy all day long. Perfect for mixing and matching.",
+        price: "12.99",
+        imageUrl: "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29ja3N8ZW58MHx8MHx8fDA%3D",
+        sizes: ["S", "M", "L"],
+        colors: ["Pink", "Blue", "Yellow"],
       },
     ];
 
