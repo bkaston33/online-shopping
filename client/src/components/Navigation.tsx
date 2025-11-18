@@ -9,29 +9,42 @@ export function Navigation() {
   const { itemCount } = useCart();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between px-4 mx-auto max-w-7xl">
+    <header className="sticky top-0 z-50 w-full bg-slate-900 text-white shadow-lg">
+      <div className="container flex h-20 items-center justify-between px-6 mx-auto max-w-7xl">
         <Link href="/" data-testid="link-home">
           <div className="flex items-center gap-2 cursor-pointer">
-            <h1 className="text-2xl font-display font-bold tracking-tight">
-              ThreadArt
+            <h1 className="text-3xl font-display font-bold tracking-tight">
+              ThreadCraft
             </h1>
           </div>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/" data-testid="link-shop">
-            <button className="text-sm font-medium hover-elevate px-3 py-2 rounded-md transition-colors">
-              Shop
+          <Link href="/" data-testid="link-home-nav">
+            <button className="text-base font-medium hover:text-gray-300 transition-colors px-3 py-2">
+              Home
             </button>
           </Link>
+          <Link href="/" data-testid="link-products">
+            <button className="text-base font-medium hover:text-gray-300 transition-colors px-3 py-2">
+              Products
+            </button>
+          </Link>
+          <Link href="/cart" data-testid="link-cart-nav">
+            <button className="text-base font-medium hover:text-gray-300 transition-colors px-3 py-2">
+              Cart
+            </button>
+          </Link>
+          <button className="text-base font-medium hover:text-gray-300 transition-colors px-3 py-2" data-testid="link-contact">
+            Contact
+          </button>
         </nav>
 
         <Link href="/cart" data-testid="link-cart">
           <Button
             variant="ghost"
             size="icon"
-            className="relative"
+            className="relative text-white hover:bg-white/10"
           >
             <ShoppingCart className="h-5 w-5" />
             {itemCount > 0 && (

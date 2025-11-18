@@ -8,7 +8,7 @@ export function Footer() {
           <div>
             <h3 className="font-display font-semibold text-lg mb-4">About</h3>
             <p className="text-sm text-muted-foreground">
-              Custom t-shirts for artists, events, and communities. Quality designs that tell your story.
+              Quality apparel for artists, events, and communities. Designs that tell your story.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ export function Footer() {
           <div>
             <h3 className="font-display font-semibold text-lg mb-4">Connect</h3>
             <p className="text-sm text-muted-foreground mb-2">
-              Email: hello@threadart.com
+              Email: hello@threadcraft.com
             </p>
             <p className="text-sm text-muted-foreground">
               Phone: (555) 123-4567
@@ -47,7 +47,7 @@ export function Footer() {
 
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} ThreadArt. All rights reserved.
+            © {new Date().getFullYear()} ThreadCraft. All rights reserved.
           </p>
         </div>
       </div>
