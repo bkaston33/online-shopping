@@ -5,8 +5,30 @@ import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
 
 export function Navigation() {
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
   const { itemCount } = useCart();
+
+  const handleProductsClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    
+    if (location === "/") {
+      // Already on home page, just scroll to products section
+      const productsSection = document.getElementById("products");
+      if (productsSection) {
+        productsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      // Navigate to home page first
+      setLocation("/");
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const productsSection = document.getElementById("products");
+        if (productsSection) {
+          productsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full bg-slate-900 text-white shadow-lg">
@@ -25,11 +47,13 @@ export function Navigation() {
               Home
             </button>
           </Link>
-          <Link href="/" data-testid="link-products">
-            <button className="text-base font-medium hover:text-gray-300 transition-colors px-3 py-2">
-              Products
-            </button>
-          </Link>
+          <button 
+            onClick={handleProductsClick}
+            className="text-base font-medium hover:text-gray-300 transition-colors px-3 py-2"
+            data-testid="link-products"
+          >
+            Products
+          </button>
           <Link href="/cart" data-testid="link-cart-nav">
             <button className="text-base font-medium hover:text-gray-300 transition-colors px-3 py-2">
               Cart
