@@ -50,12 +50,12 @@ export class MemStorage implements IStorage {
         colors: ["Black", "Charcoal", "Navy"],
       },
       {
-        name: "Mountain Escape",
-        description: "For the adventurers and nature lovers. This stunning mountain landscape illustration captures the serenity of the great outdoors. Wear your wanderlust proudly.",
+        name: "Graphic Tee",
+        description: "Express yourself with bold graphics and eye-catching designs. This statement piece combines artistic flair with everyday comfort for a look that stands out.",
         price: "27.99",
-        imageUrl: mountainTee,
+        imageUrl: "https://images.unsplash.com/photo-1527719327859-c6ce80353573?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
         sizes: ["S", "M", "L", "XL", "XXL"],
-        colors: ["Heather Gray", "Forest Green", "Navy"],
+        colors: ["White", "Black", "Navy"],
       },
       {
         name: "But First Coffee",
