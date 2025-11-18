@@ -19,9 +19,9 @@ export default function Confirmation() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-gray-50">
         <Navigation />
-        <main className="flex-1 container max-w-3xl mx-auto px-4 py-12">
+        <main className="flex-1 container max-w-3xl mx-auto px-6 py-16">
           <div className="text-center space-y-6">
             <Skeleton className="h-16 w-16 rounded-full mx-auto" />
             <Skeleton className="h-10 w-64 mx-auto" />
@@ -35,9 +35,9 @@ export default function Confirmation() {
 
   if (!order) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-gray-50">
         <Navigation />
-        <main className="flex-1 container max-w-3xl mx-auto px-4 py-12">
+        <main className="flex-1 container max-w-3xl mx-auto px-6 py-16">
           <div className="text-center">
             <h2 className="text-2xl font-bold mb-4">Order not found</h2>
             <Link href="/" data-testid="link-home-notfound">
@@ -53,9 +53,9 @@ export default function Confirmation() {
   const items = JSON.parse(order.items);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Navigation />
-      <main className="flex-1 container max-w-3xl mx-auto px-4 py-12">
+      <main className="flex-1 container max-w-3xl mx-auto px-6 py-16">
         <div className="text-center space-y-6 mb-12">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/20">
             <CheckCircle2 className="h-8 w-8 text-green-600 dark:text-green-500" />

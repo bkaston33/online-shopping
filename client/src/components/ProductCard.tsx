@@ -21,7 +21,7 @@ export function ProductCard({ product }: ProductCardProps) {
             />
           </div>
           <div className="p-5 space-y-3">
-            <h3 className="font-display font-semibold text-lg" data-testid={`text-product-name-${product.id}`}>
+            <h3 className="font-semibold text-lg" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }} data-testid={`text-product-name-${product.id}`}>
               {product.name}
             </h3>
             <p className="text-xl font-semibold text-primary" data-testid={`text-product-price-${product.id}`}>

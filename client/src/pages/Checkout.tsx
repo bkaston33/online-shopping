@@ -73,9 +73,9 @@ export default function Checkout() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Navigation />
-      <main className="flex-1 container max-w-4xl mx-auto px-4 py-12">
+      <main className="flex-1 container max-w-4xl mx-auto px-6 py-16">
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-display font-bold mb-4">
             Checkout

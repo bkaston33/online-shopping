@@ -64,9 +64,9 @@ export default function ProductDetail() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-gray-50">
         <Navigation />
-        <main className="flex-1 container max-w-7xl mx-auto px-4 py-12">
+        <main className="flex-1 container max-w-7xl mx-auto px-6 py-16">
           <div className="grid md:grid-cols-2 gap-12">
             <Skeleton className="aspect-square w-full" />
             <div className="space-y-6">
@@ -83,9 +83,9 @@ export default function ProductDetail() {
 
   if (!product) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-gray-50">
         <Navigation />
-        <main className="flex-1 container max-w-7xl mx-auto px-4 py-12">
+        <main className="flex-1 container max-w-7xl mx-auto px-6 py-16">
           <div className="text-center">
             <h2 className="text-2xl font-bold mb-4">Product not found</h2>
             <Button onClick={() => window.location.href = "/"}>
@@ -99,9 +99,9 @@ export default function ProductDetail() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Navigation />
-      <main className="flex-1 container max-w-7xl mx-auto px-4 py-12">
+      <main className="flex-1 container max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="aspect-square overflow-hidden rounded-lg bg-muted">
             <img

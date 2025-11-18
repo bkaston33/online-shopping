@@ -12,9 +12,9 @@ export default function Cart() {
 
   if (itemCount === 0) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-gray-50">
         <Navigation />
-        <main className="flex-1 container max-w-7xl mx-auto px-4 py-12">
+        <main className="flex-1 container max-w-7xl mx-auto px-6 py-16">
           <div className="text-center py-16">
             <ShoppingBag className="h-16 w-16 mx-auto mb-4 text-muted-foreground" />
             <h2 className="text-2xl font-display font-bold mb-2" data-testid="text-empty-cart">
@@ -36,9 +36,9 @@ export default function Cart() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Navigation />
-      <main className="flex-1 container max-w-7xl mx-auto px-4 py-12">
+      <main className="flex-1 container max-w-7xl mx-auto px-6 py-16">
         <h1 className="text-3xl md:text-4xl font-display font-bold mb-8">
           Shopping Cart
         </h1>
