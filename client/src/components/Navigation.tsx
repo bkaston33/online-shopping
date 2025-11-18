@@ -30,6 +30,28 @@ export function Navigation() {
     }
   };
 
+  const handleContactClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    
+    if (location === "/") {
+      // Already on home page, just scroll to footer
+      const footer = document.getElementById("contact");
+      if (footer) {
+        footer.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      // Navigate to home page first
+      setLocation("/");
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const footer = document.getElementById("contact");
+        if (footer) {
+          footer.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full bg-slate-900 text-white shadow-lg">
       <div className="container flex h-20 items-center justify-between px-6 mx-auto max-w-7xl">
@@ -59,7 +81,11 @@ export function Navigation() {
               Cart
             </button>
           </Link>
-          <button className="text-base font-medium hover:text-gray-300 transition-colors px-3 py-2" data-testid="link-contact">
+          <button 
+            onClick={handleContactClick}
+            className="text-base font-medium hover:text-gray-300 transition-colors px-3 py-2"
+            data-testid="link-contact"
+          >
             Contact
           </button>
         </nav>
