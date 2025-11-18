@@ -22,7 +22,7 @@ export function Hero() {
             Wear Your Creativity
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-            Custom tees for artists, events, and communities. Express yourself with unique designs.
+            Quality apparel for artists, events, and communities. Express yourself with unique designs.
           </p>
           <div className="pt-4">
             <Button
