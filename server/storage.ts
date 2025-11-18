@@ -58,12 +58,12 @@ export class MemStorage implements IStorage {
         colors: ["White", "Black", "Navy"],
       },
       {
-        name: "But First Coffee",
-        description: "Coffee enthusiasts unite! A minimalist line art design for those who live by the coffee-first philosophy. The perfect tee for your morning ritual and beyond.",
-        price: "25.99",
-        imageUrl: coffeeTee,
+        name: "Sweatpants",
+        description: "Ultimate comfort for lounging or active days. These premium sweatpants offer a perfect blend of style and coziness with a relaxed fit that moves with you.",
+        price: "34.99",
+        imageUrl: "https://images.unsplash.com/photo-1608585617748-d55938680e85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN3ZWF0cGFudHN8ZW58MHx8MHx8fDA%3D",
         sizes: ["S", "M", "L", "XL", "XXL"],
-        colors: ["Navy", "Black", "Brown"],
+        colors: ["Gray", "Black", "Navy"],
       },
       {
         name: "Botanical Garden",
