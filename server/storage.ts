@@ -69,7 +69,7 @@ export class MemStorage implements IStorage {
         name: "Shorts",
         description: "Stay cool and comfortable in these versatile shorts. Perfect for workouts, casual outings, or relaxing at home. Lightweight fabric with a modern fit.",
         price: "29.99",
-        imageUrl: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcnRzfGVufDB8fDB8fHww",
+        imageUrl: "https://images.pexels.com/photos/8084766/pexels-photo-8084766.jpeg",
         sizes: ["S", "M", "L", "XL", "XXL"],
         colors: ["Blue", "Black", "Gray"],
       },
