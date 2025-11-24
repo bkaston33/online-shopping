@@ -42,20 +42,20 @@ export class MemStorage implements IStorage {
         colors: ["White", "Black", "Gray"],
       },
       {
-        name: "Classic Hoodie",
-        description: "Comfort meets style in this essential hoodie. Perfect for layering or wearing solo, this versatile piece offers warmth and a relaxed fit for any casual occasion.",
-        price: "39.99",
-        imageUrl: "https://images.pexels.com/photos/8217416/pexels-photo-8217416.jpeg",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-        colors: ["Black", "Charcoal", "Navy"],
-      },
-      {
         name: "Graphic Tee",
         description: "Express yourself with bold graphics and eye-catching designs. This statement piece combines artistic flair with everyday comfort for a look that stands out.",
         price: "27.99",
         imageUrl: "https://images.unsplash.com/photo-1527719327859-c6ce80353573?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
         sizes: ["S", "M", "L", "XL", "XXL"],
         colors: ["White", "Black", "Navy"],
+      },
+      {
+        name: "Classic Hoodie",
+        description: "Comfort meets style in this essential hoodie. Perfect for layering or wearing solo, this versatile piece offers warmth and a relaxed fit for any casual occasion.",
+        price: "39.99",
+        imageUrl: "https://images.pexels.com/photos/8217416/pexels-photo-8217416.jpeg",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["Black", "Charcoal", "Navy"],
       },
       {
         name: "Sweatpants",
