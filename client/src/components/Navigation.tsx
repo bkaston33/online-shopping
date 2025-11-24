@@ -1,8 +1,6 @@
-import { ShoppingCart } from "lucide-react";
 import { Link, useLocation } from "wouter";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
+import { CartDrawer } from "./CartDrawer";
 
 export function Navigation() {
   const [location, setLocation] = useLocation();
@@ -90,24 +88,7 @@ export function Navigation() {
           </button>
         </nav>
 
-        <Link href="/cart" data-testid="link-cart">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="relative text-white hover:bg-white/10"
-          >
-            <ShoppingCart className="h-5 w-5" />
-            {itemCount > 0 && (
-              <Badge
-                variant="destructive"
-                className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-xs"
-                data-testid="badge-cart-count"
-              >
-                {itemCount}
-              </Badge>
-            )}
-          </Button>
-        </Link>
+        <CartDrawer />
       </div>
     </header>
   );
