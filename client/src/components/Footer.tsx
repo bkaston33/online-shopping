@@ -37,7 +37,7 @@ export function Footer() {
           <div>
             <h3 className="font-display font-semibold text-lg mb-4">Connect</h3>
             <p className="text-sm text-muted-foreground mb-2">
-              Email: hello@threadcraft.com
+              Email: hello@teetime.com
             </p>
             <p className="text-sm text-muted-foreground">
               Phone: (555) 123-4567
@@ -47,7 +47,7 @@ export function Footer() {
 
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} ThreadCraft. All rights reserved.
+            © {new Date().getFullYear()} TeeTime. All rights reserved.
           </p>
         </div>
       </div>

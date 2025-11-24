@@ -58,7 +58,7 @@ export function Navigation() {
         <Link href="/" data-testid="link-home">
           <div className="flex items-center gap-2 cursor-pointer">
             <h1 className="text-3xl font-display font-bold tracking-tight">
-              ThreadCraft
+              TeeTime
             </h1>
           </div>
         </Link>

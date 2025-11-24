@@ -1,8 +1,8 @@
-# ThreadArt - Custom T-Shirt E-Commerce Platform
+# TeeTime - Apparel E-Commerce Platform
 
 ## Overview
 
-ThreadArt is a modern e-commerce platform for selling custom-designed t-shirts. The application features a visual-first shopping experience with product browsing, cart management, and checkout functionality. Built with a React frontend and Express backend, it emphasizes clean design, smooth user interactions, and a frictionless purchasing flow.
+TeeTime is a modern e-commerce platform for selling quality apparel. The application features a visual-first shopping experience with product browsing, cart management, and checkout functionality. Built with a React frontend and Express backend, it emphasizes clean design, smooth user interactions, and a frictionless purchasing flow.
 
 ## User Preferences
 
